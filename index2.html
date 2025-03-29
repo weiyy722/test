@@ -8,11 +8,7 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-window.onload = function() {
-    if (localStorage.getItem('bgmPlaying') === 'true') {
-        document.getElementById('bgm').play();
-    }
-};
+
 #ui .love {
   position: absolute;
   top: 50%;
@@ -1183,5 +1179,10 @@ window.onload = function() {
     </div>
   </div>
 </div>
+  window.onload = function() {
+    if (localStorage.getItem('bgmPlaying') === 'true') {
+        document.getElementById('bgm').play();
+    }
+};
   
 </div></section></template></div><div id="__FEISHU_CLIPPER__"></div></body></html>
