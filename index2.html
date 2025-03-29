@@ -8,7 +8,11 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-
+window.onload = function() {
+    if (localStorage.getItem('bgmPlaying') === 'true') {
+        document.getElementById('bgm').play();
+    }
+};
 #ui .love {
   position: absolute;
   top: 50%;
