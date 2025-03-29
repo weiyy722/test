@@ -120,6 +120,7 @@
         function playMusic() {
             const bgm = document.getElementById('bgm');
             bgm.play();
+            localStorage.setItem('bgmPlaying', 'true'); // 存储状态
             document.querySelector('.play-button').style.display = 'none'; // 播放后隐藏按钮
         }
     </script>
